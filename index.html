@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Trackside 3D - an offline five-lane endless driving game built with Three.js."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Trackside 3D</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game-canvas" aria-label="Trackside 3D game"></canvas>
+      <div class="hud">
+        <div class="metric">
+          <span>Distance</span>
+          <strong id="distance">0 m</strong>
+        </div>
+        <div class="metric">
+          <span>Coins</span>
+          <strong id="coins">0</strong>
+        </div>
+        <div class="metric">
+          <span>Best</span>
+          <strong id="best">0 m</strong>
+        </div>
+        <div class="power-strip" id="powerStrip"></div>
+      </div>
+      <div class="touch-controls" aria-hidden="true">
+        <button id="touchLeft" type="button">‹</button>
+        <button id="touchRight" type="button">›</button>
+      </div>
+      <div class="menu" id="menu">
+        <div class="menu-panel">
+          <p class="kicker">Offline Three.js Racer</p>
+          <h1>Trackside 3D</h1>
+          <p class="tagline">Five lanes. Changing worlds. One clean run.</p>
+          <button id="startButton" type="button">Start Run</button>
+        </div>
+      </div>
+      <div class="toast" id="toast"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
